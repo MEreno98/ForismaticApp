@@ -23,11 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bfd-Y5-4ip">
-                                <rect key="frame" x="148.66666666666669" y="40" width="117.00000000000006" height="29"/>
+                                <rect key="frame" x="145.66666666666669" y="40" width="123.00000000000006" height="29"/>
                                 <segments>
                                     <segment title="English"/>
-                                    <segment title="Rusian"/>
+                                    <segment title="Russian"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sc_idioma:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ejw-Wb-oQX"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W94-a0-rzK">
                                 <rect key="frame" x="30" y="118.00000000000001" width="354" height="31.333333333333357"/>
@@ -98,6 +101,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="l_autor" destination="W94-a0-rzK" id="LPC-2d-Fpe"/>
+                        <outlet property="l_frase" destination="bUH-8h-Exm" id="8Yw-Ry-AeW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
