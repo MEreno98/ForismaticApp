@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DFF30A662929670E86C54B8 /* Pods_ForismaticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512C9BD262EC5EDE6BA36E6B /* Pods_ForismaticApp.framework */; };
 		972B37ED1E09C09C0086A980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B37EC1E09C09C0086A980 /* AppDelegate.swift */; };
 		972B37EF1E09C09C0086A980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B37EE1E09C09C0086A980 /* ViewController.swift */; };
 		972B37F21E09C09C0086A980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972B37F01E09C09C0086A980 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CB41319128120F355584A52 /* Pods-ForismaticApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForismaticApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForismaticApp/Pods-ForismaticApp.debug.xcconfig"; sourceTree = "<group>"; };
+		512C9BD262EC5EDE6BA36E6B /* Pods_ForismaticApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForismaticApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972B37E91E09C09C0086A980 /* ForismaticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForismaticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972B37EC1E09C09C0086A980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972B37EE1E09C09C0086A980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		972B37F31E09C09C0086A980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972B37F61E09C09C0086A980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972B37F81E09C09C0086A980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09A18510C7D9906009F327F /* Pods-ForismaticApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForismaticApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForismaticApp/Pods-ForismaticApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFF30A662929670E86C54B8 /* Pods_ForismaticApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1607DBAB93F4E13C52F75663 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CB41319128120F355584A52 /* Pods-ForismaticApp.debug.xcconfig */,
+				B09A18510C7D9906009F327F /* Pods-ForismaticApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D9D8BBAFA1B90CEF3CE7BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				512C9BD262EC5EDE6BA36E6B /* Pods_ForismaticApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		972B37E01E09C09B0086A980 = {
 			isa = PBXGroup;
 			children = (
 				972B37EB1E09C09C0086A980 /* ForismaticApp */,
 				972B37EA1E09C09C0086A980 /* Products */,
+				1607DBAB93F4E13C52F75663 /* Pods */,
+				7D9D8BBAFA1B90CEF3CE7BB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 972B37FB1E09C09C0086A980 /* Build configuration list for PBXNativeTarget "ForismaticApp" */;
 			buildPhases = (
+				1C094E5B2FEACB62E766C03F /* [CP] Check Pods Manifest.lock */,
 				972B37E51E09C09B0086A980 /* Sources */,
 				972B37E61E09C09B0086A980 /* Frameworks */,
 				972B37E71E09C09B0086A980 /* Resources */,
+				BDC676208AA774DF91735748 /* [CP] Embed Pods Frameworks */,
+				7F35880338B1BCEF2B4D1336 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C094E5B2FEACB62E766C03F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F35880338B1BCEF2B4D1336 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForismaticApp/Pods-ForismaticApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDC676208AA774DF91735748 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForismaticApp/Pods-ForismaticApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		972B37E51E09C09B0086A980 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		972B37FC1E09C09C0086A980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB41319128120F355584A52 /* Pods-ForismaticApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GLU2Z7NT53;
@@ -270,6 +346,7 @@
 		};
 		972B37FD1E09C09C0086A980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09A18510C7D9906009F327F /* Pods-ForismaticApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GLU2Z7NT53;

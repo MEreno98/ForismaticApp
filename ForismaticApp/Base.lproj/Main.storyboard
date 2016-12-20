@@ -1,22 +1,102 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ForismaticApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bfd-Y5-4ip">
+                                <rect key="frame" x="148.66666666666669" y="40" width="117.00000000000006" height="29"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="Rusian"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W94-a0-rzK">
+                                <rect key="frame" x="30" y="118.00000000000001" width="354" height="31.333333333333357"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wayne Dyer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rY0-7r-be3">
+                                <rect key="frame" x="35" y="154.33333333333334" width="349" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5mS-Gw-hk2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expression:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-8h-Exm">
+                                <rect key="frame" x="30" y="269.33333333333331" width="354" height="31.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="If you change the way you look at things, the things you look at change." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-Fc-SeF">
+                                <rect key="frame" x="35" y="305.66666666666663" width="349" height="249.99999999999989"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="10V-Qo-Sp1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="10V-Qo-Sp1"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bUH-8h-Exm" secondAttribute="trailing" constant="10" id="00v-C8-62B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W94-a0-rzK" secondAttribute="trailing" constant="10" id="8WN-QA-ENa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vub-Fc-SeF" secondAttribute="trailing" constant="10" id="CdY-Vc-eds"/>
+                            <constraint firstItem="Vub-Fc-SeF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Ffa-2r-yR5"/>
+                            <constraint firstItem="rY0-7r-be3" firstAttribute="top" secondItem="W94-a0-rzK" secondAttribute="bottom" constant="5" id="HbI-Y2-cau"/>
+                            <constraint firstItem="Vub-Fc-SeF" firstAttribute="top" secondItem="bUH-8h-Exm" secondAttribute="bottom" constant="5" id="NWU-xC-tIu"/>
+                            <constraint firstItem="W94-a0-rzK" firstAttribute="top" secondItem="Bfd-Y5-4ip" secondAttribute="bottom" constant="50" id="OZf-xs-fUV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rY0-7r-be3" secondAttribute="trailing" constant="10" id="b2a-t2-qTq"/>
+                            <constraint firstAttribute="bottom" secondItem="Vub-Fc-SeF" secondAttribute="bottom" constant="10" id="ctn-hT-W9H">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="W94-a0-rzK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="eq0-FQ-EB9"/>
+                            <constraint firstItem="rY0-7r-be3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="hpr-mb-0uh"/>
+                            <constraint firstItem="bUH-8h-Exm" firstAttribute="top" secondItem="rY0-7r-be3" secondAttribute="bottom" constant="75" id="luK-xz-J8A">
+                                <variation key="heightClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="bUH-8h-Exm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ncj-M7-QQM"/>
+                            <constraint firstItem="Bfd-Y5-4ip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="peB-cH-wvZ"/>
+                            <constraint firstItem="Bfd-Y5-4ip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szX-Fg-IVa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ctn-hT-W9H"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="ctn-hT-W9H"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
