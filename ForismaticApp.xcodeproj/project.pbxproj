@@ -377,6 +377,7 @@
 				972B37FD1E09C09C0086A980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
